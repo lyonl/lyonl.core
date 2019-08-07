@@ -3,6 +3,20 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>LyonL</AssemblyName>
+    <Company>LyonL Interactive, LLC.</Company>
+    <Authors>Chad Vogel</Authors>
+    <Product>LyonL Core</Product>
+    <RepositoryUrl>https://github.com/lyonl/lyonl.core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageId>LyonL.Core</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl />
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Copyright>Copyright © 2019 LyonL Interactive, LLC. All rights reserved.</Copyright>
+    <AssemblyVersion>1.0.8.0</AssemblyVersion>
+    <FileVersion>1.0.8.0</FileVersion>
+    <Version>1.0.8</Version>
   </PropertyGroup>
 
   <ItemGroup>

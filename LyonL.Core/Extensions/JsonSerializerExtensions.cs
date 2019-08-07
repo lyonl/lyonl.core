@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Bson;
 
@@ -8,8 +7,6 @@ namespace LyonL.Extensions
 {
     public static class JsonSerializerExtensions
     {
-
-
         public static byte[] SerializeToBson<TValue>(this JsonSerializer jsonSerializer, TValue value)
             where TValue : class
         {
@@ -28,7 +25,7 @@ namespace LyonL.Extensions
         public static TValue DeserializeFromBson<TValue>(this JsonSerializer jsonSerializer, byte[] stream,
             DateTimeKind dateTimeKindHandling = DateTimeKind.Utc) where TValue : class
         {
-            if (stream == null) return default(TValue);
+            if (stream == null) return default;
 
             using (var memoryStream = new MemoryStream(stream))
             {
@@ -38,6 +35,5 @@ namespace LyonL.Extensions
                 return result;
             }
         }
-
     }
 }

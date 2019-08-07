@@ -24,7 +24,7 @@ namespace LyonL
             }
             catch (Exception)
             {
-                return default(TReturn);
+                return default;
             }
         }
 
