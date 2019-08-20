@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics;
 using System.Text;
-using EnsureThat;
+using MandateThat;
 using LyonL.Properties;
 
 namespace LyonL.Extensions
@@ -10,7 +10,7 @@ namespace LyonL.Extensions
     {
         public static string ConvertToBaseString(this byte[] valueAsArray, string digits, int pad)
         {
-            Ensure.That(digits, nameof(digits)).IsNotNullOrEmpty();
+            Mandate.That(digits, nameof(digits)).IsNotNullOrEmpty();
 
             if (digits.Length < 2)
                 throw new ArgumentOutOfRangeException(nameof(digits), Resources.BaseConverter_OutOfRangeMessage);

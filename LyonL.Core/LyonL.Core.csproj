@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>LyonL</AssemblyName>
+    <AssemblyName>LyonL.Core</AssemblyName>
     <Company>LyonL Interactive, LLC.</Company>
     <Authors>Chad Vogel</Authors>
     <Product>LyonL Core</Product>
@@ -17,10 +17,11 @@
     <AssemblyVersion>1.0.8.0</AssemblyVersion>
     <FileVersion>1.0.8.0</FileVersion>
     <Version>1.0.8</Version>
+    <RootNamespace>LyonL</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Ensure.That" Version="8.1.1" />
+    <PackageReference Include="MandateThat" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
   </ItemGroup>
 

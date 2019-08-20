@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.Security;
-using EnsureThat;
+using MandateThat;
 
 namespace LyonL.Extensions
 {
@@ -9,7 +9,7 @@ namespace LyonL.Extensions
     {
         public static SecureString AppendString(this SecureString s, string src)
         {
-            Ensure.That(src, nameof(src)).IsNotNullOrEmpty();
+            Mandate.That(src, nameof(src)).IsNotNullOrEmpty();
             foreach (var c in src.ToCharArray()) s.AppendChar(c);
 
             return s;
